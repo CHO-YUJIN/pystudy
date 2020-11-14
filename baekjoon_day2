@@ -12,3 +12,9 @@ print("||_/=\\\\__|")
 A,B = map(int, (input().split()))
 print(A+B)
 """
+
+#1001번
+"""
+A,B = map(int, input().split())
+print(A-B)
+"""
