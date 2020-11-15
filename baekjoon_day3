@@ -1,0 +1,16 @@
+#10998번
+"""
+A, B = map(int,input().split())
+print(A*B)
+"""
+
+#1008번
+"""
+A, B = map(int, input().split())
+s = A/B
+float(s)
+print(s)
+"""
+
+
+
