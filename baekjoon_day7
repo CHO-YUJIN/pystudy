@@ -18,3 +18,29 @@ RESULT = OUTO + OUTT + OUTS
 
 print(RESULT)
 """
+
+#위의 코드로 해서 틀림.
+#아래 코드가 정답.
+
+"""
+A = int(input())
+B = int(input())
+
+BO = B%10
+BT = (B - BO) / 10 % 10  
+BS = B // 100   # / 는 소수점 까지 출력되고, 몫만 출력하려면 //를 사용해야 함. 
+OUTO = A*BO
+OUTT = int(A*BT)
+OUTS = int(A*BS)  
+print(OUTO)
+print(OUTT)
+print(OUTS)
+
+sumt = OUTT*10
+sums = OUTS*100
+
+RESULT = OUTO + sumt + sums
+
+print(RESULT)
+"""
+
