@@ -1,0 +1,20 @@
+#2588번
+"""
+A = int(input())
+B = int(input())
+
+BO = B%10
+BT = (B - BO) / 10 % 10  
+BS = (B - 10*BT) / 100
+OUTO = A*BO
+OUTT = int((A*BT)*10)
+OUTS = int((A*BS)*100)  // OUTT랑 OUTS가 왜 float 형으로 나오지? 
+
+print(OUTO)
+print(OUTT)
+print(OUTS)
+
+RESULT = OUTO + OUTT + OUTS
+
+print(RESULT)
+"""
