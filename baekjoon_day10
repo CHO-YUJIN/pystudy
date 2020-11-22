@@ -1,0 +1,27 @@
+#2739번 
+"""
+N = int(input())
+
+for i in range(1,10):
+    print('%d * %d = %d' %(N, i, N*i))   #'' 와 %() 사이에 ,으로 구분하면 안됨. 
+"""
+
+#10950번
+"""
+T = int(input())
+
+for i in range(1,T+1):
+    A, B = map(int, input().split())
+    print(A+B)
+"""
+
+#8393번
+"""
+n = int(input())
+sum = 0
+
+for i in range(1,n+1):
+    sum += i
+    
+print(sum)
+"""
