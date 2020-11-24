@@ -1,0 +1,46 @@
+#15552번
+"""
+import sys   
+ 
+T = int(input())
+
+for i in range(0,T):
+    A, B = sys.stdin.readline().rsplit()   #sys.stdin.readline() 은 input()보다 빠른 입력을 받을 수 있음. 입출력의 효율성. / 다만 int(sys.stdin.readline().rsplit())는 안됨. 다음 줄 처럼 따로 int()처리 해주어야 함.
+    A = int(A)
+    B = int(B)
+    print(A+B)
+"""
+
+#2741번
+"""
+N = int(input())
+
+for i in range(1,N+1):
+    print(i)
+"""
+
+#2742번
+"""
+N = int(input())
+
+for i in range(N,0,-1):
+    print(i)
+"""
+
+#11021번
+"""
+T = int(input())
+
+for i in range(1,T+1):
+    A, B=map(int, input().split())
+    print("Case #%d: %d" %(i, A+B))
+"""
+
+#11022번
+'''
+T = int(input())
+
+for i in range(1,T+1):
+    A, B =map(int, input().split())
+    print("Case #%d: %d + %d = %d" %(i,A,B,A+B))
+'''
