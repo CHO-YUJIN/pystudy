@@ -3,6 +3,25 @@
 N = int(input())
 
 for i in range(1,N+1):
-    for j in range(i):
+    for j in range(i): #range(i): i번 반복(반복 횟수 알 때 사용)
         print('*', end='')
+    print()   #여기 print()가 줄바꿈때문에 헷갈림. end='' 때문에 *표시 바로 뒤에 커서있으므로 여기서 공백 으로 print한번 해줘야 다음 줄로 커서 넘어가있음.
+''' 
+
+#2439번
 '''
+N = int(input())
+
+for i in range(1,N+1):
+    if (N-i) > 0:
+        for o in range(N-i):
+            print(' ', end='')
+        for j in range(i):
+            print('*', end='')
+        print()
+    else:
+        for j in range(i):
+            print('*', end='')
+        print()
+'''
+
