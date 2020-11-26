@@ -1,2 +1,30 @@
 #10871번
 '''
+N ,X = map(int,input().split())
+
+A=[int(x) for x in input().split()]
+
+for i in A:
+    if (i < X):
+        print(i, '', end='') # ''만 print하면 '와'사이에 공백안써도 한칸공백생성됨. 즉 ' '이렇게 사이에 공백을 쓸 경우 2칸 공백이 출력됨.
+'''
+
+#10952번
+'''
+while True:
+    A, B = map(int, input().split())
+    if A == B == 0:
+        break
+    else:
+        print(A+B)
+'''
+
+#10951번
+'''       #try-except 찾아봄. while무한루프만 돌렸는데, 테스트케이스 갯수 제한이 없어서 오류인경우도 고려해줬어야함.. 
+while True:
+    try:
+        A, B= map(int, input().split())
+        print(A+B)
+    except:
+        break
+'''
