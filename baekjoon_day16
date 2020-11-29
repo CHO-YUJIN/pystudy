@@ -47,3 +47,11 @@ for k in range(0,9):
         print(k+1)
         break
 '''
+'''
+#2562 모범풀이
+num_list = []
+for numbers in range(9): #9번 반복위해 range(9)로 범위설정해 for문 사용. 
+    num_list.append(int(input()))
+print(max(num_list))  #max()라는 함수가 있구나.. min()함수도 있음.
+print(num_list.index(max(num_list))+1) #.index()는 리스트 중에서 특정한 원소가 몇 번째에 처음으로 등장했는지를 알려줌. 만약에 두 번 이상 원소가 중복되어 존재하는 경우에는 맨 처음 등장한 순간의 인덱스를 출력
+'''
