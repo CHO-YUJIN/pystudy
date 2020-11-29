@@ -1,0 +1,49 @@
+#1110번
+'''
+N = int(input())
+check = N #새로운 수 생성될때마다 새로운 변수에 저장하기보다 처음 받는 수만 체크변수로 저장하기. 
+new_N = 0
+temp = 0
+count = 0
+while True:
+    temp = N//10 + N%10  #/은 소수점까지 출력되는 나눗셈. 
+    new_N = (N%10)*10 + temp%10  # str로 변환해서 올릴 필요 없이, 10을 곱해서 10의자릿수로 만들어 주기. 
+    count += 1
+    N = new_N
+    if new_N == check:
+        break
+print(count)
+'''
+
+#10818번
+'''
+N = int(input())
+lst = list(map(int, input().split())) # 여러 값 공백으로 구분하여 한번에 받기.
+max = lst[0]
+min = lst[0]
+    
+for j in range(0,N): 
+    if max < lst[j]:
+        max = lst[j]
+    elif lst[j]<min:
+        min = lst[j]
+            
+print(min, max)
+'''
+
+#2562번
+'''
+lst = []
+for i in range(0,9):
+    lst.append(int(input()))
+
+max = lst[0]
+for j in range(0,9):
+    if lst[j]>max:
+        max = lst[j]
+print(max)
+for k in range(0,9):
+    if lst[k] == max:
+        print(k+1)
+        break
+'''
