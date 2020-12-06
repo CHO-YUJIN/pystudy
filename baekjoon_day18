@@ -1,0 +1,39 @@
+#2577번
+'''
+A = int(input())
+B = int(input())
+C = int(input())
+result = A*B*C
+
+a = []
+for i in str(result):
+    a.append(i)
+
+
+
+'''
+
+#입력(hostname or IP주소)받아 표준호스트 이름,별칭,사용가능한 IP출력.
+import socket
+
+hostname = input("hostname :")
+try :
+    name, aliaslist, addresses = socket.gethostbyname_ex(hostname)
+    print('Hostname:', name)
+    print('Aliases:', aliaslist)
+    print('Addresses:', addresses)
+except socket.error as emsg:
+    print('Error:',emsg)
+    print()
+    
+print()
+    
+ip_address = input("ip address:")
+try :
+    hostname, aliases, addresses = socket.gethostbyaddr(ip_address)
+    print('Hostname:', hostname)
+    print('Aliases:', aliases)
+    print('Addresses:', addresses)
+except socket.error as emsg:
+    print('Error:',emsg)
+    print()
